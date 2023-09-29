@@ -1,96 +1,19 @@
 @media(min-width: 992px){
 //nav
-.nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    height: 12vh;
-    color: $main-black;
 
+.nav{
     &__logo{
         font-size:3em;
-        align-self: center;
-
-        & span{
-            padding: 0 .2em;
-        }
     }
 
-    &__list-desktop{
-        display: flex;
-        height: 100%;
-        padding: 0;
-    }
+
 
     &__item-desktop{
-        height: 12vh;
+
         font-size: 1.2em;
-        padding:5vh;
-        align-self: center;
-        color: $main-black;
-        text-decoration: none;
-        font-weight: 500;
-        transition: .5s color;
-
-        &:hover{
-            display: block;
-            margin: 0;
-            background-color: $main-black;
-            color: $main-white;
-        }
-
-    }
-
-}
-
-.fa-tree{
-    color: $main-gray;
-}
-
-//header
-.header{
-    height: 70vh;
-    position: relative;
-
-    &__img{
-        width: 100%;
-        height: 100%;
-        background-image: url('../../dist/img/jungle-1807476_1280.webp');
-        background-position: center;
-        background-size: cover;
-    
-        &-bg{
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0, .7);
-        }
-
-        &-text{
-            position: absolute;
-            top:50%;
-            left:20%;
-            width: 100%;
-            height: 100%;
-            color: white;
-            
-
-            & h2{
-                font-size: 2em;
-                font-weight: 300;
-            }
-
-            & p{
-                font-size: 3em;
-                font-weight: 700;
-            }
-        }
     
     }
+
 }
-
-
-
-
-
 
 }

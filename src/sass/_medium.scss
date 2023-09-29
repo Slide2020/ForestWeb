@@ -1,1 +1,74 @@
-@media(min-width: 576px){}
+@media(min-width: 768px){
+    //nav
+
+    .burger-btn{
+     display: none;
+    }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    height: 12vh;
+    color: $main-black;
+
+    &__logo{
+        font-size:2em;
+        align-self: center;
+
+        & span{
+            padding: 0 .2em;
+        }
+    }
+
+    &__list-desktop{
+        display: flex;
+        height: 100%;
+        padding: 0;
+    }
+
+    &__item-desktop{
+        height: 12vh;
+        font-size: 1em;
+        padding:5vh;
+        align-self: center;
+        color: $main-black;
+        text-decoration: none;
+        font-weight: 500;
+        transition: .5s color;
+
+        &:hover{
+            display: block;
+            margin: 0;
+            background-color: $main-black;
+            color: $main-white;
+        }
+
+    }
+
+}
+
+//header
+.header{
+    height: 70vh;
+    position: relative;
+
+    &__img{
+       
+        &-text{
+    
+            & h2{
+                font-size: 2em;
+                font-weight: 300;
+            }
+
+            & p{
+                font-size: 3em;
+                font-weight: 700;
+            }
+        }
+    
+    }
+}
+
+}
