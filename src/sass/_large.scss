@@ -1,19 +1,53 @@
-@media(min-width: 992px){
-//nav
+@media (min-width: 992px) {
+	//nav
 
-.nav{
-    &__logo{
-        font-size:3em;
-    }
+	.nav {
+		&__logo {
+			font-size: 3em;
+		}
 
+		&__item-desktop {
+			font-size: 1.2em;
+		}
+	}
 
+	//header
+	.header {
+		height: 60vh;
+		position: relative;
 
-    &__item-desktop{
+		&__img {
+			&-text {
+				position: absolute;
+				top: 45%;
+				left: 20%;
 
-        font-size: 1.2em;
-    
-    }
+			}
+		}
+	}
 
-}
+	.about-us {
+		&__box {
+			flex-direction: row;
+			margin: 2em auto;
+			padding: 2em;
+		}
 
+		&__img {
+			margin-right: 3em;
+			width: 45%;
+		}
+
+		&__description {
+			&-header {
+				margin: 0;
+				font-size: 2em;
+			}
+
+			&-text {
+				font-size: 1em;
+				margin-top: 1em;
+			}
+		}
+	}
 }

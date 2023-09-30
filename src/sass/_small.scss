@@ -1,7 +1,7 @@
 @media(min-width: 576px){
 
     .header{
-        height: 70vh;
+        height: 40vh;
         position: relative;
     
         &__img{
@@ -18,6 +18,25 @@
             }
         
         }
+   
+   //about-us section
+.about-us {
+
+
+	&__description {
+		&-header {
+			margin-top: 1em;
+		}
+
+        &-text {
+			margin-top: .2em;
+		}
+	}
+}
+   
+   
     }
+
+
 
 

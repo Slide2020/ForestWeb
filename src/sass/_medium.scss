@@ -1,6 +1,8 @@
 @media(min-width: 768px){
     //nav
 
+
+
     .burger-btn{
      display: none;
     }
@@ -50,10 +52,12 @@
 
 //header
 .header{
-    height: 70vh;
+    height: 50vh;
     position: relative;
 
     &__img{
+
+        background-image: url('../../dist/img/jungle-1807476_1280.webp');
        
         &-text{
     
@@ -71,4 +75,20 @@
     }
 }
 
+//about-us section
+.about-us {
+
+
+	&__description {
+		&-header {
+			margin-top: 1em;
+		}
+
+        &-text {
+			margin-top: .2em;
+		}
+	}
 }
+
+}
+
