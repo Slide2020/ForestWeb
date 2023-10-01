@@ -1,6 +1,18 @@
 @media (min-width: 992px) {
-	//nav
+	//GENERICS-----------------------------------------------------------------------------
 
+    .section{
+        margin-top: 5em;
+    }
+    
+	.section__header {
+		font-size: 4em;
+	}
+
+
+
+	//NAV--------------------------------------------------------------------------
+	
 	.nav {
 		&__logo {
 			font-size: 3em;
@@ -11,43 +23,57 @@
 		}
 	}
 
-	//header
+	//HEADER-----------------------------------------------------------------------------------------
 	.header {
 		height: 60vh;
 		position: relative;
-
-		&__img {
-			&-text {
-				position: absolute;
-				top: 45%;
-				left: 20%;
-
-			}
-		}
 	}
 
-	.about-us {
-		&__box {
-			flex-direction: row;
-			margin: 2em auto;
-			padding: 2em;
+	
+
+//MAIN
+
+//ABOUT-US SECTION----------
+.about-us {
+	&__box {
+		flex-direction: row;
+		margin-top: 2em;
+		padding: 2em;
+	}
+
+	&__img {
+		margin-right: 3em;
+		width: 45%;
+	}
+
+	&__description {
+		&-header {
+			margin: 0;
+			font-size: 2em;
 		}
 
-		&__img {
-			margin-right: 3em;
-			width: 45%;
-		}
-
-		&__description {
-			&-header {
-				margin: 0;
-				font-size: 2em;
-			}
-
-			&-text {
-				font-size: 1em;
-				margin-top: 1em;
-			}
+		&-text {
+			font-size: 1em;
+			margin-top: 1em;
 		}
 	}
+}
+
+//ADVENTURE SECTION-----------------------------------------------------------------------------------------
+
+.adventure {
+
+	&__box {
+		height: 30vh;
+	}
+
+	
+	&__description-header {
+		font-size: 2em;
+		padding: 1.2em 1em;
+	
+	}
+}
+
+
 }

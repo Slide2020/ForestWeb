@@ -1,42 +1,45 @@
-@media(min-width: 576px){
+@media (min-width: 576px) {
+	//GENERICS-----------------------------------------------------------------------------
+	.section__header {
+		font-size: 2em;
+	}
 
-    .header{
-        height: 40vh;
-        position: relative;
-    
-        &__img{
-               
-                & h2{
-                    font-size: 1.5em;
-                    font-weight: 400;
-                }
-    
-                & p{
-                    font-size: 2em;
-                    font-weight: 700;
-                }
-            }
-        
-        }
-   
-   //about-us section
-.about-us {
+	//NAV--------------------------------------------------------------------------
 
+	//HEADER-----------------------------------------------------------------------------------------
+	.header {
+		&__img {
+			& h2 {
+				font-size: 1.5em;
+				font-weight: 400;
+			}
 
-	&__description {
-		&-header {
-			margin-top: 1em;
-		}
-
-        &-text {
-			margin-top: .2em;
+			& p {
+				font-size: 2em;
+				font-weight: 700;
+			}
 		}
 	}
+
+	//MAIN
+
+	//ABOUT-US SECTION-----------------------------------------------------------------------------------------
+
+	//ADVENTURE SECTION-----------------------------------------------------------------------------------------
+	.adventure {
+
+		&__box {
+			height: 23vh;
+
+		}
+
+
+		
+		&__description-header {
+			font-size: 1.2em;
+			padding: 1.2em 1em;
+		
+		}
+	}
+
 }
-   
-   
-    }
-
-
-
-

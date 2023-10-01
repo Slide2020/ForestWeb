@@ -1,94 +1,126 @@
-@media(min-width: 768px){
-    //nav
+@media (min-width: 768px) {
+	//GENERICS-----------------------------------------------------------------------------
 
-
-
-    .burger-btn{
-     display: none;
+    .section{
+        margin-top: 4em;
     }
-
-.nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    height: 12vh;
-    color: $main-black;
-
-    &__logo{
-        font-size:2em;
-        align-self: center;
-
-        & span{
-            padding: 0 .2em;
-        }
-    }
-
-    &__list-desktop{
-        display: flex;
-        height: 100%;
-        padding: 0;
-    }
-
-    &__item-desktop{
-        height: 12vh;
-        font-size: 1em;
-        padding:5vh;
-        align-self: center;
-        color: $main-black;
-        text-decoration: none;
-        font-weight: 500;
-        transition: .5s color;
-
-        &:hover{
-            display: block;
-            margin: 0;
-            background-color: $main-black;
-            color: $main-white;
-        }
-
-    }
-
-}
-
-//header
-.header{
-    height: 50vh;
-    position: relative;
-
-    &__img{
-
-        background-image: url('../../dist/img/jungle-1807476_1280.webp');
-       
-        &-text{
     
-            & h2{
-                font-size: 2em;
-                font-weight: 300;
-            }
+	.section__header {
+		font-size: 3em;
+	}
 
-            & p{
-                font-size: 3em;
-                font-weight: 700;
-            }
-        }
-    
-    }
-}
+	//NAV--------------------------------------------------------------------------
 
-//about-us section
-.about-us {
+	.burger-btn {
+		display: none;
+	}
 
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 1em;
+		height: 12vh;
+		color: $main-black;
 
-	&__description {
-		&-header {
-			margin-top: 1em;
+		&__logo {
+			font-size: 2em;
+			align-self: center;
+
+			& span {
+				padding: 0 0.2em;
+			}
 		}
 
-        &-text {
-			margin-top: .2em;
+		&__list-desktop {
+			display: flex;
+			height: 100%;
+			padding: 0;
+		}
+
+		&__item-desktop {
+			height: 12vh;
+			font-size: 1em;
+			padding: 5vh;
+			align-self: center;
+			color: $main-black;
+			text-decoration: none;
+			font-weight: 500;
+			transition: 0.5s color;
+
+			&:hover {
+				display: block;
+				margin: 0;
+				background-color: $main-black;
+				color: $main-white;
+			}
+		}
+	}
+
+	//HEADER-----------------------------------------------------------------------------------------
+
+	.header {
+		height: 50vh;
+
+		&__img {
+			background-image: url("../../dist/img/jungle-1807476_1280.webp");
+
+			&-text {
+				& h2 {
+					font-size: 2em;
+					font-weight: 300;
+				}
+
+				& p {
+					font-size: 3em;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+
+	//MAIN
+
+	//ABOUT-US SECTION-----------------------------------------------------------------------------------------
+	.about-us {
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+        }
+
+
+		&__description {
+			&-header {
+				font-size: 2em;
+			}
+
+			&-text {
+				margin-top: 0.3em;
+				font-size: 1.2em;
+			}
+		}
+	}
+
+	//ADVENTURE SECTION-----------------------------------------------------------------------------------------
+
+	.adventure {
+
+		&__box {
+			height: 25vh;
+		}
+
+		&__img {
+			background-image: url("../../dist/img/girl-5785590_1280.webp");
+		}
+
+		
+		&__description-header {
+			font-size: 1.6em;
+			padding: 1.2em 1em;
+		
 		}
 	}
 }
 
-}
 
