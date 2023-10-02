@@ -42,4 +42,15 @@
 		}
 	}
 
+//OFFER SECTION-----------------------------------------------------------------------------------------
+.offer {
+	&__boxes {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+	}
+
+}
+
 }
