@@ -53,4 +53,37 @@
 
 }
 
+//FOOTER----------------------------------------------------------------------------------------
+.footer {
+
+	&__logo {
+		display: flex;
+		align-self: center;
+		font-size: 1.6em;
+	}
+
+
+	&__lists {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		ul > a li {
+			list-style-type: none;
+			margin: 0.5em 1em;
+			font-size: 1.1em;
+		}
+
+		&-header {
+			font-size: 1.1em;
+			margin: 2em 1em 0.5em 1em;
+		
+		
+		}
+	}
+
+	&__copy-right {
+		font-size: 1.2em;
+	}
+}
+
 }

@@ -35,14 +35,14 @@ body {
 	scroll-margin-top: 14vh;
 }
 
-.fa-check, .fa-minus{
-	padding: 0 .5em;
+.fa-check,
+.fa-minus {
+	padding: 0 0.5em;
 }
 
-.fa-check{
+.fa-check {
 	color: $main-green;
 }
-
 
 //NAV--------------------------------------------------------------------------
 
@@ -152,7 +152,7 @@ body {
 		&-text {
 			position: absolute;
 			top: 50%;
-			left: 40%;		
+			left: 40%;
 			transform: translate(-50%, -50%);
 			color: white;
 
@@ -231,20 +231,18 @@ body {
 
 //OFFER SECTION-----------------------------------------------------------------------------------------
 
-.offer{
-
-	&__boxes{
+.offer {
+	&__boxes {
 		display: flex;
 		flex-direction: column;
 	}
 
-
-	&__header{
-				margin-top:3rem;
-				text-align: center;
-				font-weight: normal;
+	&__header {
+		margin-top: 3rem;
+		text-align: center;
+		font-weight: normal;
 	}
-	&__box{
+	&__box {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -253,55 +251,104 @@ body {
 		height: 22em;
 		width: 17em;
 		border-radius: 2%;
-		box-shadow:0 0 6px $main-gray;
+		box-shadow: 0 0 6px $main-gray;
 
-		&-description{
-	
+		&-description {
 			font-weight: normal;
-			
 		}
 
-		&-price{
-	
+		&-price {
 			font-weight: bold;
 			font-size: 3em;
-			margin: .3em;
-
+			margin: 0.3em;
 		}
 
-
-		&-benefit-list{
-		
+		&-benefit-list {
 			list-style-type: none;
 
-			
-			&-item{
-				margin: .1em;
-				padding: .2em;
+			&-item {
+				margin: 0.1em;
+				padding: 0.2em;
 			}
 		}
 
-		&-button{
+		&-button {
 			margin-top: 1.5em;
-			padding: .5em 4em;
+			padding: 0.5em 4em;
 			border: none;
-			box-shadow:0 0 6px $main-gray;
+			box-shadow: 0 0 6px $main-gray;
 			border-radius: 2%;
 			cursor: pointer;
 			font-size: 1em;
-			transition: background-color .3s, box-shadow .3s;
-		
-		&:hover{
-			background-color: $main-green;
-			box-shadow:0 0 6px $main-green;
-		}
-		
-		}
+			transition: background-color 0.3s, box-shadow 0.3s;
 
+			&:hover {
+				background-color: $main-green;
+				box-shadow: 0 0 6px $main-green;
+			}
+		}
 	}
 }
 
+//FOOTER----------------------------------------------------------------------------------------
+.footer {
+	background-color: $footer-background;
+	margin-top: 3em;
 
+	
+	&__logo {
+		display: none;
+	}
+
+	&__box {
+		height: 100%;
+		margin: 2em;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__lists {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
+		ul > a li {
+			list-style-type: none;
+			margin: 0.5em 0;
+			font-size: 0.8em;
+		}
+
+		a:link {
+			text-decoration: none;
+			color: $main-black;
+			transition: color 0.3s;
+		}
+
+		a:visited {
+			text-decoration: none;
+			color: $main-black;
+		}
+
+		a:hover {
+			color: $main-gray;
+		}
+
+		&-header {
+			font-size: 1em;
+			margin-top: 2em;
+			margin-bottom: .7em;
+		}
+	}
+
+	&__copy-right {
+		display: block;
+		height: 100%;
+		padding: 1em 0;
+		text-align: center;
+		border-top: 1px solid $main-gray;
+		font-size: .7em;
+	}
+}
 
 @import "./small";
 @import "./medium";
