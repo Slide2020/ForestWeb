@@ -1,18 +1,16 @@
 @media (min-width: 992px) {
-//GENERICS-----------------------------------------------------------------------------
+	//GENERICS-----------------------------------------------------------------------------
 
-    .section{
-        margin-top: 5em;
-    }
-    
+	.section {
+		margin-top: 5em;
+	}
+
 	.section__header {
 		font-size: 4em;
 	}
 
+	//NAV--------------------------------------------------------------------------
 
-
-//NAV--------------------------------------------------------------------------
-	
 	.nav {
 		&__logo {
 			font-size: 3em;
@@ -21,13 +19,10 @@
 		&__item-desktop {
 			font-size: 1.3em;
 			padding: 5vh 2.5em;
-	
 		}
-
-	
 	}
 
-//HEADER-----------------------------------------------------------------------------------------
+	//HEADER-----------------------------------------------------------------------------------------
 	.header {
 		height: 60vh;
 		position: relative;
@@ -44,86 +39,90 @@
 		}
 	}
 
-	
+	//MAIN
 
-//MAIN
+	//ABOUT-US SECTION----------
+	.about-us {
+		&__box {
+			flex-direction: row;
+			margin-top: 2em;
+			padding: 2em;
+		}
 
-//ABOUT-US SECTION----------
-.about-us {
-	&__box {
-		flex-direction: row;
-		margin-top: 2em;
-		padding: 2em;
+		&__img {
+			margin-right: 3em;
+			width: 45%;
+		}
+
+		&__description {
+			&-header {
+				margin: 0;
+				font-size: 2em;
+			}
+
+			&-text {
+				font-size: 1em;
+				margin-top: 1em;
+			}
+		}
 	}
 
-	&__img {
-		margin-right: 3em;
-		width: 45%;
-	}
+	//ADVENTURE SECTION-----------------------------------------------------------------------------------------
 
-	&__description {
-		&-header {
-			margin: 0;
+	.adventure {
+		&__box {
+			height: 30vh;
+		}
+
+		&__description-header {
 			font-size: 2em;
-		}
-
-		&-text {
-			font-size: 1em;
-			margin-top: 1em;
+			padding: 1.2em 1em;
 		}
 	}
-}
 
-//ADVENTURE SECTION-----------------------------------------------------------------------------------------
-
-.adventure {
-
-	&__box {
-		height: 30vh;
+	//OFFER SECTION-----------------------------------------------------------------------------------------
+	.offer {
+		&__header {
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+			font-size: 1.5em;
+			text-align: center;
+			font-weight: normal;
+		}
+		
 	}
+
+	//FOOTER----------------------------------------------------------------------------------------
+	.footer {
+		&__logo {
+			display: block;
+			position: absolute;
+
+			margin-top: 2.5em;
+			margin-left: 1em;
+			font-size: 3em;
 
 	
-	&__description-header {
-		font-size: 2em;
-		padding: 1.2em 1em;
-	
-	}
-}
-
-//OFFER SECTION-----------------------------------------------------------------------------------------
-
-//FOOTER----------------------------------------------------------------------------------------
-.footer {
-
-	&__logo {
-		margin-top: 2.5em;
-		margin-left: 1em;
-		font-size: 3em;
-	}
-
-
-	&__lists {
-		display: flex;
-		width: 100%;
-		justify-content: center;
-		ul > a li {
-			list-style-type: none;
-			margin: 0.5em 1em;
-			font-size: 1.6em;
-		
 		}
 
-		&-header {
-			font-size: 1.6em;
-			margin: 2em 1em 0.5em 1em;
-		
-		
+		&__lists {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			ul > a li {
+				list-style-type: none;
+				margin: 0.5em 1em;
+				font-size: 1.6em;
+			}
+
+			&-header {
+				font-size: 1.6em;
+				margin: 2em 1em 0.5em 1em;
+			}
+		}
+
+		&__copy-right {
+			font-size: 1.5em;
 		}
 	}
-
-	&__copy-right {
-		font-size: 1.5em;
-	}
-}
-
 }
