@@ -3,6 +3,7 @@ const navMobile = document.querySelector('#nav-mobile')
 const burgerBtnIcon = document.querySelector('#burger-icon')
 const nav = document.querySelector('.nav')
 const navLinksList = document.querySelectorAll('.nav__item-mobile')
+const footerYear = document.querySelector('.footer__copy-right span')
 
 const toogleMobileNav = () =>{
     navMobile.classList.toggle("nav-mobile--active")
@@ -26,6 +27,15 @@ navLinksList.forEach(el=> el.addEventListener('click', e =>{
     burgerBtnIcon.classList.remove("fa-x")
     burgerBtnIcon.classList.add("fa-bars")
 }))
+
+
+const handleCurrentYear = () => {
+	const year = (new Date).getFullYear();
+	footerYear.innerText = year;
+}
+
+handleCurrentYear();
+
 
 
 burgerBtn.addEventListener('click', toogleMobileNav)
