@@ -133,7 +133,7 @@ body {
 
 //HEADER-----------------------------------------------------------------------------------------
 .header {
-	height: 40vh;
+	height: 20vh;
 	position: relative;
 
 	&__img {
@@ -193,7 +193,7 @@ body {
 //ADVENTURE SECTION-----------------------------------------------------------------------------------------
 .adventure {
 	&__box {
-		height: 20vh;
+		height: 15vh;
 		position: relative;
 	}
 
@@ -230,7 +230,6 @@ body {
 }
 
 //OFFER SECTION-----------------------------------------------------------------------------------------
-
 .offer {
 	&__boxes {
 		display: flex;
@@ -291,9 +290,11 @@ body {
 }
 
 //FOOTER----------------------------------------------------------------------------------------
+
 .footer {
 	background-color: $footer-background;
 	margin-top: 3em;
+	position: relative;
 
 	
 	&__logo {
@@ -310,12 +311,14 @@ body {
 	&__lists {
 		display: flex;
 		width: 100%;
-		justify-content: space-between;
+		justify-content: center;
+		padding: 0 1em;
 
 		ul > a li {
 			list-style-type: none;
 			margin: 0.5em 0;
 			font-size: 0.8em;
+			padding: 0 10px;
 		}
 
 		a:link {
@@ -337,6 +340,8 @@ body {
 			font-size: 1em;
 			margin-top: 2em;
 			margin-bottom: .7em;
+			padding: 0 10px;
+		
 		}
 	}
 
