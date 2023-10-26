@@ -125,4 +125,45 @@
 			font-size: 1.5em;
 		}
 	}
+
+//CONTACT----------------------------------------------------------------------------------------
+.contact-box {
+
+	font-size: 1.6em;
+
+
+
+	&__form {
+
+		& textarea {
+			width: 70rem;
+			height: 50rem;
+		}
+
+		& form {
+			margin: 0.5em 0;
+		
+		}
+	}
+
+	&__location {
+
+		& p{
+			margin: 0.5em 0;
+		}
+
+		& iframe{
+			height: 70rem;
+			width: 70rem;
+		}
+
+	}
+}
+
+
+
+
+
+
+
 }
